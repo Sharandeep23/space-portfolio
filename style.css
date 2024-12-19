@@ -17,6 +17,42 @@ html {
   box-sizing: inherit;
 }
 
+.colors {
+  display: flex;
+  gap: 20px;
+}
+
+/* All the direct children of .colors */
+.colors > * {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.tan {
+  background-color: var(--tan);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.lightgreen {
+  background-color: var(--lightgreen);
+}
+
+.red {
+  background-color: var(--red);
+}
+
 /* h/t Scott O'Hara https://css-tricks.com/inclusively-hidden/ */
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
